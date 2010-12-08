@@ -1,12 +1,13 @@
 OpenFeedback
 =========
-OpenFeedback is a Cocoa framework which allows your users to submit bug reports, feature requests, and ask support questions from directly within your application. It can store feedback in [Shine](http://github.com/tylerhall/Shine/tree/master) or connect to your own custom server-side script. And, like [Sparkle](http://sparkle.andymatuschak.org/), OpenFeedback can be integrated into your application in just a few minutes - no code required.
+OpenFeedback is a Cocoa framework which allows your users to submit bug reports, feature requests, and ask support questions from directly within your application. It can also automatically submit crash reports from your app on restart. All of this data can be stored in [Shine](http://github.com/tylerhall/Shine/tree/master) or connected to your own custom server-side script. And, like [Sparkle](http://sparkle.andymatuschak.org/), OpenFeedback can be integrated into your application in just a few minutes - no code required.
 
 Screenshots
 -------
-[![Screenshot 1](http://static.clickontyler.com/blog/of-support-sm.png)](http://static.clickontyler.com/blog/of-support.png)
-[![Screenshot 2](http://static.clickontyler.com/blog/of-feature-sm.png)](http://static.clickontyler.com/blog/of-feature.png)
-[![Screenshot 3](http://static.clickontyler.com/blog/of-bug-sm.png)](http://static.clickontyler.com/blog/of-bug.png)
+![Support Request](http://cdn.tyler.fm/blog/of-question.png)
+![Feature Request](http://cdn.tyler.fm/blog/of-feature.png)
+![Bug Report](http://cdn.tyler.fm/blog/of-bug.png)
+![Crash Report](http://cdn.tyler.fm/blog/of-crash.png)
 
 INSTALL
 -------
@@ -14,7 +15,7 @@ INSTALL
 **Linking OpenFeedback to your project**
 
  1. [Download](http://github.com/tylerhall/OpenFeedback/archives/master) and compile the lastest OpenFeedback source from [GitHub](http://github.com/tylerhall/OpenFeedback/tree/master).
- 2. Drag the compiled OpenFeedback.framework into the Linked Frameworks folder of your XCode project. Be sure to check the "copy items into the destination group's folder" box in the sheet that appears.
+ 2. Drag the compiled OpenFeedback.framework into the Linked Frameworks folder of your Xcode project. Be sure to check the "copy items into the destination group's folder" box in the sheet that appears.
  3. Create a new Copy Files build phase for your app's target (Project > New Build Phase > New Copy Files Build Phase).
  4. Choose "Frameworks" as the destination for your new build phase.
  5. Click the disclosure triangle next to your app's target, and drag OpenFeedback.framework from the Linked Frameworks folder to the Copy Files build phase you just created.
@@ -53,15 +54,18 @@ UPDATES
 
 Code is hosted at GitHub:
 
-Original [http://github.com/tylerhall/OpenFeedback](http://github.com/tylerhall/OpenFeedback)  
-Crash reporter [http://github.com/tomaz/OpenFeedback](http://github.com/tomaz/OpenFeedback)  
+[http://github.com/tylerhall/OpenFeedback](http://github.com/tylerhall/OpenFeedback)  
+
+Much love to [Tomaz](http://github.com/tomaz) for adding in the excellent crash reporting functionality.
 
 LICENSE
 -------
 
 The MIT License
 
-Copyright (c) 2010 Tyler Hall <tylerhall AT gmail DOT com>
+Original implementation copyright (c) 2010 [Tyler Hall](http://clickonideas.com).
+
+Other code portions written by [Tomaz](http://github.com/tomaz) and various contributors. (Please let me know if I've left off anyone's name.)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
